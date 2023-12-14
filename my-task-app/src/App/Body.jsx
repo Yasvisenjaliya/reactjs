@@ -1,5 +1,6 @@
 import React from 'react'
 import './Navbar.css';
+import CountUp from 'react-countup';
 
 function Body() {
 
@@ -19,18 +20,18 @@ function Body() {
                     </div>
                 </div>
 
-                <div >
-                    <img class="image" className='photo' src="./image/Rocket.jpg" />
+                <div className='ph' >
+                    <img  className='photo' src="./image/Rocket.jpg" />
                 </div>
             </div>
 
             <footer class='last'>
                 <div id='la1'>
                     <div class='num'>
-                        <h1>5,230</h1>
-                        <h1>5,230</h1>
-                        <h1>5,230</h1>
-                        <h1>5,230</h1>
+                        <CountUp start={0} end={5209}>+</CountUp>
+                        <CountUp start={0} end={2456}>+</CountUp>
+                        <CountUp start={0} end={3678}>+</CountUp>
+                        <CountUp start={0} end={2895}>+</CountUp>
                     </div>
                     <div class='nmm'>
                         <p1 class='nam'>Link Optimized</p1>

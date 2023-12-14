@@ -4,13 +4,14 @@ import React from 'react';
 import './Navbar.css'; // Import the CSS file for styling
 // import logo from '../logo.png'; // Import your logo file
 
+
 const Navbar = () => {
   return (
     <>
       <nav>
 
         <div>
-          <i>MARCHY</i>
+          <h2>MARCHY</h2>
         </div>
 
         <div>
@@ -23,8 +24,8 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className='but'>
-          <button>Contact</button>
+        <div>
+          <button className='but'>Contact us</button>
         </div>
       </nav>
     </>
