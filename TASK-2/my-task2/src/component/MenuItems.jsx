@@ -5,6 +5,12 @@ export const MenuItems = [
         cName : "nav-links",
         icon : "fa-solid fa-house-user"
     },
+    // {
+    //     title : "Home",
+    //     url : "/",
+    //     cName : "nav-links",
+    //     icon : "fa-solid fa-house-user"
+    // },
 
     {
         title : "About",
