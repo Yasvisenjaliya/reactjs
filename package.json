@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "react-count-up": "^1.0.0",
-    "react-countup": "^6.5.0"
+    "react-countup": "^6.5.0",
+    "react-router-dom": "^6.21.0"
   }
 }
