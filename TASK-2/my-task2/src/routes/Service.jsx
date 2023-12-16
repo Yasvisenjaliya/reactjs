@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from '../component/Navbar'
 import Hero from '../component/Hero'
+import Footer from '../component/Footer'
+import Trip from '../component/Trip'
 
 function Service() {
   return (
@@ -13,6 +15,8 @@ function Service() {
      
     btnClass="hide"
     />
+<Trip />
+    <Footer />  
     </>
   )
 }
