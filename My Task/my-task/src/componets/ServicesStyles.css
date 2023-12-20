@@ -1,0 +1,27 @@
+.sr{
+    text-align: center;
+    color: rgb(52, 52, 143);
+    font-size: 3rem;
+}
+
+.title{
+    text-align: center;
+    font-size: 4rem;
+}
+.div1{
+    display: flex;
+}
+.aaa{
+    display: flex;
+    flex-direction: column;
+}
+
+.bbb{
+    display: flex;
+    flex-direction: column;
+}
+
+.ccc{
+    display: flex;
+    flex-direction: column;
+}

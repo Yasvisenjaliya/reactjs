@@ -1,0 +1,41 @@
+.footer{
+    display: flex;
+    left: 0;
+    right: 0;
+    margin-top: 5rem;
+    background-color: rgb(239, 235, 230);
+}
+#img{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.logo{
+    display: flex;
+}
+.image{
+   margin-top: 2rem;
+    height: 3rem;
+}
+.hy{
+    margin-left: 2rem;
+}
+.fb{
+    margin-left: 2rem;
+}
+.icon{
+    margin-top: 2rem;
+}
+.twit{
+    margin-left: 2rem;
+    
+}
+.company{
+    margin-left: 8rem;
+    justify-content: space-between;
+}
+.services{
+    margin-left: 8rem;
+}
+.cus{
+    margin-left: 8rem;
+}

@@ -6,9 +6,9 @@ const Navbar = () => {
     return (
         <>
             <nav>
-                <Link>
-                    <h1 className='title'>Demaze</h1>
-                </Link>
+
+                <h1 className='title'>Demaze</h1>
+
                 <ul>
 
                     <li>
@@ -18,9 +18,17 @@ const Navbar = () => {
                         <Link to="/services">Services</Link>
                     </li>
                     <li>
-                        <Link to="aboutus">Aboutus</Link>
+                        <Link to="/aboutus">Aboutus</Link>
                     </li>
+                    
                 </ul>
+                
+                    <Link to="/contactus">
+                    <button className='btn'>Contact Us</button>
+                </Link>
+                   
+
+                
             </nav>
         </>
     )
