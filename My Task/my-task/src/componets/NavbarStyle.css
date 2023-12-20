@@ -2,14 +2,18 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgb(134, 203, 203);
+  border-radius: 1rem;
  }
 
  nav .title{
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin: 1rem;
-  font-weight: bold;
-  text-decoration: none;
-  list-style: none;
+  font-weight: 2rem;
+  
+ }
+ nav .title:hover{
+  color: rgb(120, 97, 72);
  }
 
  nav ul{
@@ -29,4 +33,14 @@ nav{
 
   nav ul li a:hover{
     background-color: rgb(95, 95, 198);
+  }
+  .btn{
+    font-size: 1.5rem;
+    margin: 1rem;
+    border-radius: 1px;
+    border-style:inset;
+    background-color: rgb(94, 94, 153);
+  }
+  .btn:hover{
+    background-color: rgb(74, 74, 58);
   }
