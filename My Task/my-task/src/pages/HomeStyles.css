@@ -1,14 +1,15 @@
 .home{
-    margin-left: 10%;
+    /* margin-left: 10%; */
     display: flex;
-    
+    background-color: rgb(163, 107, 119);
+   
 }
 .img{
     display: flex;
     flex-direction: column;
 }
 .img1{
-    width: 15rem; /* Adjust the width and height as needed */
+    width: 15rem;
     height: 15rem;
     border-radius: 50%;
     overflow: hidden;
@@ -36,6 +37,7 @@
 
 .top{
     margin-top: 5%;
+    margin-left: 10%;
     
 }
 .first{
@@ -44,6 +46,7 @@
 .text{
     font-style: bold;
     font-weight: 2;
+    margin-left: 5rem;
 }
  .circle{
     margin-bottom: 2px;
@@ -52,6 +55,8 @@
  .btn1{
     font-size: 2rem;
     border-radius: 10px;
+    margin-left: 5rem;
+    margin-top: 2rem;
  }
  .btn2{
     margin-left: 20%;
@@ -60,13 +65,14 @@
  }
  @media screen and (max-width:850px) {
     .home{
-        margin-left: 10%;
+       margin-top: 20px;
         display: flex;
-        
+        padding-bottom: 20px;
     }
 
     .img{
         display: none;
         
     }
+   
  }

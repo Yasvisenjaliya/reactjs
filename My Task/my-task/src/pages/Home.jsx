@@ -17,7 +17,7 @@ const Home = () => {
             business processes <br /> through
             Website & Mobile Application.
           </h3>
-          <Link to="/contact us"><button className='btn1'>Contact Us</button></Link>
+          <Link to="/contactus"><button className='btn1'>Contact Us</button></Link>
           <Link to="/aboutus"><button className='btn2'>About US</button></Link>
         </div>
         <div className='img'>

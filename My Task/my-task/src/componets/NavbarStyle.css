@@ -4,12 +4,18 @@ nav{
   align-items: center;
   background-color: rgb(134, 203, 203);
   border-radius: 1rem;
+  
+ }
+ .imge{
+  height: 50px;
+  margin-left: 20px;
  }
 
  nav .title{
   font-size: 2.5rem;
-  margin: 1rem;
+  margin-top: 1px;
   font-weight: 2rem;
+  padding-left: 0px;
   
  }
  nav .title:hover{
@@ -43,4 +49,30 @@ nav{
   }
   .btn:hover{
     background-color: rgb(74, 74, 58);
+  }
+  @media screen and (max-width: 850px) {
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(134, 203, 203);
+      border-radius: 1rem;
+      
+     }
+     .btn{
+      font-size: 1rem;
+      margin: 1rem;
+      border-radius: 1px;
+      border-style:inset;
+      background-color: rgb(94, 94, 153);
+    }
+    .btn:hover{
+      background-color: rgb(74, 74, 58);
+    }
+    nav .title:hover{
+      color: rgb(120, 97, 72);
+     }
+     nav ul li a:hover{
+      background-color: rgb(95, 95, 198);
+    }
   }
