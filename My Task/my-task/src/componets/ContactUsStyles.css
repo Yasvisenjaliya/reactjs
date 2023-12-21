@@ -1,0 +1,83 @@
+.contact{
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* margin-top: 4rem; */
+    background-color: rgb(94, 55, 68);
+    
+}
+h2{
+    margin-top: 2rem;
+}
+.get{
+     width: 40%;
+    height: 35rem;
+    background-color: rgb(253, 223, 228);
+    margin-left: 20px;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.get:hover{
+    transform: scale(1.1);
+}
+.visit{
+    display: flex;
+    margin-top: 4rem;
+}
+.mail{
+    display: flex;
+    margin-top: 4rem;
+}
+.phone{
+    display: flex;
+    margin-top: 4rem;
+}
+.get h3 ,h1{
+    padding-left: 5rem;
+}
+i{
+    padding-left: 2rem;
+    margin-top: 2rem;
+}
+.fm{
+    /* padding-left: 20%; */
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.fm h1{
+    margin-right: 10rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    width: 30rem;
+}
+
+.in{
+    margin-top: 50px;
+    height: 2rem;
+}
+
+.in1{
+    margin-top: 50px;
+    height: 5rem;
+}
+.btn3{
+    margin-top: 50px;
+    width: 20%;
+    font-size: 20px;
+    margin-left: 9rem;
+    padding: 10px;
+    color: rgb(172, 130, 130);
+    background-color: rgb(60, 86, 86);
+    cursor: pointer;
+}
+
+.btn3:hover{
+    background-color: rgb(109, 90, 126);
+}

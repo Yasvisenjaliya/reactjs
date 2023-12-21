@@ -6,8 +6,7 @@ export const Footer = () => {
         <div className='footer'>
             <div id='img'>
                 <div className='logo'>
-                <img className='image' src='./assets/nnngo.png' />
-                <h1 className='hy'>Demaze <br/>Technologies</h1>
+                <img className='imge' src='./assets/dLogo.jpg' />
                 </div>
 
 
@@ -26,18 +25,18 @@ export const Footer = () => {
 
             </div>
             <div className='company'>
-                <h1>Company</h1>
+                <h2>Company</h2>
                 <h3>About Us<br />Services<br />Projects<br />Contact Us</h3>
             </div>
             <div className='services'>
-                <h1>Services</h1>
+                <h2>Services</h2>
                 <h3>Mobile App Development<br />
                     Website Development<br />
                     AI Development<br />
                     Game Development</h3>
             </div>
             <div className='cus'>
-                <h1>Contact Us</h1>
+                <h2>Contact Us</h2>
                 <div>
                     <i className='fas fa-map-marker-alt'></i>
                     <h3>D-814, Ganesh Glory 11, Jagatpur Road, S.G. Highway, Gota, Ahmedabad, Gujarat, 382470</h3>

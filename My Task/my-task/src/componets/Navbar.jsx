@@ -6,9 +6,10 @@ const Navbar = () => {
     return (
         <>
             <nav>
+                {/* <img className='imge' src='./assets/nnngo.png' />
+                <h1 className='title'>Demaze<br/><p>Teachnologies</p></h1> */}
 
-                <h1 className='title'>Demaze</h1>
-
+                <img className='imge' src='./assets/dLogo.jpg' />
                 <ul>
 
                     <li>
@@ -20,15 +21,15 @@ const Navbar = () => {
                     <li>
                         <Link to="/aboutus">Aboutus</Link>
                     </li>
-                    
+
                 </ul>
-                
-                    <Link to="/contactus">
+
+                <Link to="/contactus">
                     <button className='btn'>Contact Us</button>
                 </Link>
-                   
 
-                
+
+
             </nav>
         </>
     )

@@ -1,5 +1,6 @@
 .footer{
     display: flex;
+    justify-content: space-between;
     left: 0;
     right: 0;
     margin-top: 5rem;
@@ -9,9 +10,9 @@
     margin-top: 2rem;
     margin-left: 2rem;
 }
-.logo{
+/* .logo{
     display: flex;
-}
+} */
 .image{
    margin-top: 2rem;
     height: 3rem;
@@ -19,23 +20,46 @@
 .hy{
     margin-left: 2rem;
 }
-.fb{
+/* .fb{
     margin-left: 2rem;
-}
+} */
 .icon{
     margin-top: 2rem;
 }
-.twit{
+/* .twit{
     margin-left: 2rem;
     
-}
+} */
 .company{
     margin-left: 8rem;
     justify-content: space-between;
 }
+.company h3{
+    margin-top: 20px;
+    font-weight: 50;
+}
 .services{
     margin-left: 8rem;
 }
+.services h3{
+    font-weight: 50;
+    margin-top: 20px;
+}
 .cus{
     margin-left: 8rem;
+}
+
+@media screen and (max-width: 850px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    #img{
+        margin-top: 2rem;
+        margin-left: 7rem;
+        
+    }
+    .company{
+        margin-top: 2%;
+    }
 }
