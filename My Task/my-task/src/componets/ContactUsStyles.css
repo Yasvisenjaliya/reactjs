@@ -81,3 +81,39 @@ form{
 .btn3:hover{
     background-color: rgb(109, 90, 126);
 }
+
+
+@media screen and (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        /* padding-left: 5%;
+        padding-right: 5%; */
+    }
+
+    .get {
+        width: 80%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .visit,
+    .mail,
+    .phone {
+        flex-direction: column;
+        margin-top: 2%;
+    }
+
+    form {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .btn3 {
+        width: 100%;
+        margin-left: 0;
+    }
+    .fm h1{
+       /* display: flex; */
+       flex-direction: row;
+    }
+}

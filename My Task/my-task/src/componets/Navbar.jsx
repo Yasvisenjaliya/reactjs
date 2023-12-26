@@ -25,7 +25,7 @@ const Navbar = () => {
                 </ul>
 
                 <Link to="/contactus">
-                    <button className='btn'>Contact Us</button>
+                    <button className='btn5'>Contact Us</button>
                 </Link>
 
 
