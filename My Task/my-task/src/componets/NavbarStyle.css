@@ -40,7 +40,7 @@ nav{
   nav ul li a:hover{
     background-color: rgb(95, 95, 198);
   }
-  .btn{
+  .btn5{
     font-size: 1.5rem;
     margin: 1rem;
     border-radius: 1px;
@@ -50,29 +50,40 @@ nav{
   .btn:hover{
     background-color: rgb(74, 74, 58);
   }
-  @media screen and (max-width: 850px) {
-    nav{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: rgb(134, 203, 203);
-      border-radius: 1rem;
-      
-     }
-     .btn{
-      font-size: 1rem;
-      margin: 1rem;
-      border-radius: 1px;
-      border-style:inset;
-      background-color: rgb(94, 94, 153);
+  @media screen and (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        align-items: flex-start;
+        height: 2rem;
+        width: 26rem;
     }
-    .btn:hover{
-      background-color: rgb(74, 74, 58);
+
+    .imge {
+      height: 20px;
+      margin-top: 5px;
+        margin-left: 10px;
+        /* margin-bottom: 10px; */
     }
-    nav .title:hover{
-      color: rgb(120, 97, 72);
-     }
-     nav ul li a:hover{
-      background-color: rgb(95, 95, 198);
+
+    /* nav .title {
+        padding-left: 20px;
+    } */
+
+    nav ul {
+      font-size: 10px;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 10%;
     }
-  }
+
+    .btn5{
+      font-size: 10px;
+   margin-left: 20px;
+   margin-top: 10px;
+
+    }
+/* 
+    nav ul li {
+        margin-bottom: 10px;
+    } */
+}

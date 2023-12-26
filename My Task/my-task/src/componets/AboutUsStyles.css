@@ -79,3 +79,22 @@ hr{
   .up1 p{
     font-size: 1.2rem;
   }
+
+  @media only screen and (max-width: 768px) {
+    .about1,
+    .about2 {
+      flex-direction: column;
+      margin: 4rem;
+    }
+  
+    .who,
+    .who1 {
+      padding-left: 0;
+    }
+  
+    .up2,
+    .up1 {
+      position: static;
+      top: 2rem;
+    }
+  }
