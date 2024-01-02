@@ -4,7 +4,7 @@ import { AiOutlineClose } from "react-icons/ai";
 function Header() {
   const [toggle, setToggle] = useState(false);
   return (
-    <div className="bg-[#2699fb] p-4">
+    <div className="bg-gray-800 p-4">
       <div className="max-w-[1240px]  items-center flex justify-between border-black mx-auto">
         <div className="text-3xl font-bold">WsCube Tech</div>
         {toggle ? (
