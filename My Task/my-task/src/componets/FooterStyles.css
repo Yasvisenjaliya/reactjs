@@ -63,3 +63,80 @@
         margin-top: 2%;
     }
 }
+@media screen and (max-width: 360px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+        width: 26rem;
+    }
+
+    #img {
+        margin-left: 0;
+    }
+
+    .company,
+    .services,
+    .cus {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .footer{
+        width: 17.5rem;
+    }
+    #img {
+        margin-left: 0;
+    }
+
+    .image {
+        height: 1.5rem; /* Adjust height as needed */
+    }
+
+    .hy,
+    .icon,
+    .company,
+    .services,
+    .cus {
+        margin-left: 0;
+    }
+
+    .company {
+        margin-top: 0.5rem; /* Adjust margin as needed for spacing */
+    }
+
+    .company h3,
+    .services h3 {
+        margin-top: 5px; /* Adjust margin as needed for spacing */
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 33.8rem;
+    }
+
+    #img,
+    .image,
+    .hy,
+    .icon,
+    .company,
+    .services,
+    .cus {
+        margin-left: 0;
+    }
+
+    .company {
+        margin-top: 1rem;
+    }
+
+    .services h3,
+    .company h3 {
+        margin-top: 10px;
+    }
+}

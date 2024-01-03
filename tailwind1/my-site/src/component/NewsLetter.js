@@ -2,7 +2,7 @@ import React from "react";
 
 function NewsLetter() {
   return (
-    <div className=" bg-[#2699fb] p-4">
+    <div className=" bg-gray-800 p-4">
       <div className="max-w-[1240px] mx-auto  md:flex justify-between py-[50px]">
         <div className="m-2">
           <h1 className="text-[20px] md:text-[40px] font-bold text-white">Want to learn latest I.T skills?</h1>
