@@ -1,0 +1,38 @@
+.animate-bounce{
+    animation: yas 2s ease-in-out;
+
+}
+@keyframes yas{
+    from{
+        transform: translatey(50%);
+    }
+    to{
+        transform: translatey(0%);
+    
+    }
+}
+
+.ani-h1{
+    animation: h1 2s ease-in-out;
+}
+@keyframes h1{
+    from{
+        transform: translatey(100%);
+    }
+    to{
+        transform: translatey(0%);
+    
+    }
+}
+.ani-p{
+    animation: p 2s ease-in-out;
+}
+@keyframes p{
+    from{
+        transform: translatey(100%);
+    }
+    to{
+        transform: translatey(0%);
+    
+    }
+}

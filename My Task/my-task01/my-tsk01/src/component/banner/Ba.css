@@ -1,0 +1,81 @@
+.c-1{
+    animation: img 2s ease-in-out;
+}
+@keyframes img{
+    from{
+        transform: translatey(50%);
+    }
+    to{
+        transform: translatey(0%);
+    
+    }
+}
+.c-2{
+    animation: img 3s ease-in-out;
+}
+@keyframes img{
+    from{
+        transform: translatey(50%);
+    }
+    to{
+        transform: translatey(0%);
+    
+    }
+}
+.c-3{
+    animation: img 4s ease-in-out;
+}
+@keyframes img{
+    from{
+        transform: translatey(50%);
+    }
+    to{
+        transform: translatey(0%);
+    
+    }
+}
+.c-4{
+    animation: img 2s ease-in-out;
+}
+@keyframes img{
+    from{
+        transform: translatey(50%);
+    }
+    to{
+        transform: translatey(0%);
+    
+    }
+}
+.c-5{
+    animation: img 2s ease-in-out;
+}
+@keyframes img{
+    from{
+        transform: translatey(50%)
+    }
+    to{
+        transform: translatey(0%);
+    
+    }
+}
+.c-6{
+    animation: img 10s ease-in-out;
+}
+@keyframes img{
+    25%{
+        translate: 10rem;
+        }
+    50%{
+        translate: 0rem 10rem;
+
+    }
+    75%{
+        translate: -10rem;
+        ;
+    }
+    100%{
+        translate: 0rem -10rem;
+        ;
+    }
+    
+}
