@@ -2,18 +2,18 @@ import React from "react";
 import "./pd.css"
 const Product = () => {
   return (
-    <div>
+    <div className=" text-white">
       <div>
-        <h1 className=" text-5xl xl:text-5xl sm:text-3xl font-bold pl-[30%] pr-[30%] mt-16 ">
+        <h1 className=" lg:text-5xl md:text-5xl xl:text-5xl max-sm:text-3xl sm:text-3xl font-bold xl:pl-[30%] lg:pl-[30%] md:pl-[30%] max-sm:pl-[5%] xl:pr-[30%] lg:pr-[30%] md:pr-[30%] max-sm:pr-[5%] mt-16 ">
           Ecommerce builder for small and medium businesses
         </h1>
-        <p className="pl-[30%] pr-[30%] mt-10 text-2xl xl:text-2xl sm:text-xl ">
+        <p className="xl:pl-[30%] lg:pl-[30%] md:pl-[30%] max-sm:pl-[5%] xl:pr-[30%] lg:pr-[30%] md:pr-[30%] max-sm:pr-[5%] mt-10 text-2xl xl:text-2xl sm:text-xl ">
           When you've set your mind on starting an ecommerce business, what you
           need is an ecommerce platform that is simple to pick up and powerful
           enough to meet all your requirements.
         </p>
       </div>
-      <div className=" xl:ml-80 mt-32 xl:flex lg:ml-52  md:flex-row lg:flex sm:ml-16 sm:flex-col">
+      <div className=" xl:ml-80 max-sm:ml-5 mt-32 xl:flex lg:ml-52  md:flex-row lg:flex sm:ml-16 sm:flex-col">
         <div>
           <img src="./assets/image1.jpg"  className="xl:w-[60%] md:w-96 animate-bounce" />
           <h1 className=" xl:text-3xl sm:text-2xl mt-5 font-bold ani-h1">Create Your Store</h1>

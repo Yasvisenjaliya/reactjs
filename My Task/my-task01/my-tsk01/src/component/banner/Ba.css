@@ -55,27 +55,5 @@
     }
     to{
         transform: translatey(0%);
-    
     }
-}
-.c-6{
-    animation: img 10s ease-in-out;
-}
-@keyframes img{
-    25%{
-        translate: 10rem;
-        }
-    50%{
-        translate: 0rem 10rem;
-
-    }
-    75%{
-        translate: -10rem;
-        ;
-    }
-    100%{
-        translate: 0rem -10rem;
-        ;
-    }
-    
 }
