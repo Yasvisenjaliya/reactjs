@@ -47,9 +47,9 @@ const Hero = ({ handleOrderPopup }) => {
       };
       
   return (
-    <div className="relative overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray flex justify-center items-center dark:bg-gray-600 dark:text-white duration-200 ">
+    <div className="relative overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray flex justify-center items-center dark:bg-gray-600 dark:text-white duration-200 text-white ">
       {/* bacground */}
-      <div className="h-[700px] w-[700px] bg-slate-500 absolute lg:right-3/4 sm:right-1/2 rounded-3xl rotate-45 -z-[8] "></div>
+      <div className="h-[700px] w-[700px] bg-amber-100 absolute lg:right-3/4 sm:right-1/2 rounded-3xl rotate-45 -z-[8] "></div>
       {/* hero section */}
       <div className="container pb-8 sm:pb-0">
         <Slider {...settings}>
