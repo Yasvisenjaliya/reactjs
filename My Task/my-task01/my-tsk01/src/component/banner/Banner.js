@@ -3,7 +3,7 @@ import "./Ba.css";
 
 const Banner = () => {
   return (
-    <div className=" text-white sm:mt-16 c-1 pb-0 " style={{ backgroundImage: `./assets/image10.jpg`}}>
+    <div className=" text-white sm:mt-16 c-1 pb-0 " >
       <div className=" xl:ml-96 sm:ml-44 md:ml-32 flex md:mr-10 xl:mr-56 lg:gap-12 xl:gap-44 ">
         <div>
           <h1 className=" mt-20 xl:text-4xl lg:text-4xl md:text-2xl sm:text-3xl max-sm:text-2xl max-sm:text-center font-bold c-2">
@@ -30,26 +30,26 @@ const Banner = () => {
           <img src="./assets/image9.jpg" className="c-4" />
         </div>
       </div>
-      <div className=" xl:ml-[20rem] sm:ml-56 lg:ml-[10%] xl:mr-[20rem] md:mr-[20rem] lg:mr-[20rem] lg:gap-9 xl:flex max-sm:pl-10 max-sm:pr-10 max-sm:gap-4 md:flex lg:flex-row sm:flex-col xl:gap-24 xl:mt-40 sm:mt-20 mb-20 ">
+      <div className=" xl:ml-[20rem] sm:ml-56 lg:ml-[20%] xl:mr-[20rem] md:mr-[20%] md:ml-[20%] lg:mr-[20%] lg:gap-9 xl:flex max-sm:pl-10 max-sm:pr-10 max-sm:gap-4 md:flex lg:flex-row sm:flex-col xl:gap-24 xl:mt-40 sm:mt-20 mb-20 ">
         <div>
-          <h1 className=" xl:text-3xl lg:text-3xl md:text-3xl sm:text-3xl max-sm:text-2xl font-bold c-2">Automated Checkout</h1>
-          <p className=" xl:text-2xl lg:text-2xl md:text-2xl sm:text-2xl max-sm:text-xl sm:mt-5 c-3">
+          <h1 className=" xl:text-3xl lg:text-2xl md:text-3xl sm:text-3xl max-sm:text-2xl font-bold c-2">Automated Checkout</h1>
+          <p className=" xl:text-2xl lg:text-xl md:text-2xl sm:text-2xl max-sm:text-xl sm:mt-5 c-3">
             Easily configure store essentials like shipping, taxes, and
             payments.
           </p>
         </div>
         <div>
-          <h1 className=" xl:text-3xl lg:text-3xl md:text-3xl sm:text-3xl max-sm:text-2xl sm:mt-8 lg:mt-0 font-bold c-2">Curated Products</h1>
-          <p className="  xl:text-2xl lg:text-2xl md:text-2xl sm:text-2xl max-sm:text-xl sm:mt-5 c-3">
+          <h1 className=" xl:text-3xl lg:text-2xl md:text-3xl sm:text-3xl max-sm:text-2xl sm:mt-8 lg:mt-0 font-bold c-2">Curated Products</h1>
+          <p className="  xl:text-2xl lg:text-xl md:text-2xl sm:text-2xl max-sm:text-xl sm:mt-5 c-3">
             Create collections of your products and engage better with
             customers.
           </p>
         </div>
         <div>
-          <h1 className="xl:text-3xl lg:text-3xl md:text-3xl sm:text-3xl max-sm:text-2xl sm:mt-8 lg:mt-0 font-bold c-2">
+          <h1 className="xl:text-3xl lg:text-2xl md:text-3xl sm:text-3xl max-sm:text-2xl sm:mt-8 lg:mt-0 font-bold c-2">
             Hassle-free Hosting
           </h1>
-          <p className="  xl:text-2xl lg:text-2xl md:text-2xl sm:text-2xl max-sm:text-xl sm:mt-5  c-3">
+          <p className="  xl:text-2xl lg:text-xl md:text-2xl sm:text-2xl max-sm:text-xl sm:mt-5  c-3">
             Opt for a free subdomain, map an existing domain, or purchase a new
             domain.
           </p>

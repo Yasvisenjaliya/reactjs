@@ -11,7 +11,7 @@ const Platform = () => {
         </div>
         <div className=" md:pl-10 md:pr-10 max-sm:pl-2 max-sm:pr-2">
           <div>
-            <div className="xl:pl-48 xl:flex md:flex lg:flex xl:mt-20 md:mt-5 xl:gap-44">
+            <div className="xl:pl-48 xl:flex md:flex lg:flex xl:mt-20 md:mt-5 lg:mt-11 lg:gap-11 xl:gap-44">
               <div>
                 <h1 className=" xl:text-2xl lg:text-2xl md:text-2xl max-sm:text-xl pt-7 font-bold c-2">
                   Inventory tracking woes, eliminated
@@ -23,10 +23,10 @@ const Platform = () => {
               </div>
               <img
                 src="./assets/image6.jpg"
-                className="xl:mr-44 lg:mr-44 max-sm:w-[20rem] max-sm:p-2 w-[90%] c-5"
+                className="xl:mr-44 lg:mr-10 max-sm:w-[20rem] max-sm:p-2 lg:w-[90%] c-5"
               />
             </div>
-            <div className="xl:pl-48 xl:flex md:flex lg:flex xl:mt-20 lg:mt-20 md:mt-20 xl:gap-44">
+            <div className="xl:pl-48 xl:flex md:flex lg:flex xl:mt-20 lg:mt-20 md:mt-20 lg:gap-11 xl:gap-44">
               <div>
                 <h1 className="  xl:text-2xl lg:text-2xl md:text-2xl max-sm:text-xl pt-7 font-bold c-2">
                   Run your store. Better.
@@ -39,10 +39,10 @@ const Platform = () => {
               </div>
               <img
                 src="./assets/image4.jpg"
-                className="xl:mr-44 lg:mr-44 max-sm:w-[20rem] max-sm:p-2 xl:w-[125%] c-5"
+                className="xl:mr-44 lg:mr-10 max-sm:w-[20rem] max-sm:p-2 xl:w-[125%] lg:w-[120%] c-5"
               />
             </div>
-            <div className="xl:pl-48 xl:flex md:flex lg:flex mt-20 xl:gap-44">
+            <div className="xl:pl-48 xl:flex md:flex lg:flex xl:mt-20 lg:mt-20 md:mt-20 lg:gap-11 xl:gap-44">
               <div>
                 <h1 className=" xl:text-2xl lg:text-2xl md:text-2xl max-sm:text-xl pt-7 font-bold c-2">
                   Stay analytically ahead
@@ -55,7 +55,7 @@ const Platform = () => {
               </div>
               <img
                 src="./assets/image5.jpg"
-                className="xl:mr-44 lg:mr-44 max-sm:w-[20rem] max-sm:p-2 xl:w-[135%] c-5"
+                className="xl:mr-44 lg:mr-10 max-sm:w-[20rem] max-sm:p-2 xl:w-[135%] lg:w-[130%] c-5"
               />
             </div>
           </div>
