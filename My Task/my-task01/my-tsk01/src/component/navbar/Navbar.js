@@ -34,8 +34,8 @@ const Navbar = ({ handleOrderPopup }) => {
     <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
       <div className=" bg-slate-400 py-2">
         <div className="container flex justify-between items-center">
-          <div className=" w-10 text-black">
-            <img src="./assets/image11.jpg" className=" ml-10"/>
+          <div className=" w-10 text-black font-extrabold">
+            <h1 className="pl-10">ART<br/>Gallery</h1>
           </div>
           <div className="flex justify-between items-center gap-4">
             <div className="relative group hidden sm:block">

@@ -62,25 +62,25 @@ const Menu = [
 function Footer() {
   return (
     <>
-      <div className=" text-white bg-gray-800">
+      <div className=" text-white bg-gray-800 mt-10">
        <div className=" border border-slate-600">
-       <div className="text-white ml-[69rem] flex gap-0 p-2">
+       <div className="text-white xl:ml-[69rem] lg:ml-[40rem] md:ml-[30rem] flex gap-0 p-2">
             <IoMdMail className=" mt-2.5 w-10 text-blue-200"/>
             <h1 className=" text-xl text-blue-200">artgallery@gmail.com</h1>
         </div>
        </div>
-        <div className="relative group hidden sm:block left-96">
+        <div className="relative group xl:left-96 lg:left-56 md:left-32 max-sm:left-5">
           <input
             type="text"
             placeholder="search"
-            className="w-[300px] mt-10 sm:w-[50rem] border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary dark:border-gray-500 dark:bg-gray-800  "
+            className="xl:w-[50rem] mt-10 sm:w-[50rem] md:w-[30rem] max-sm:w-[20rem] border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary dark:border-gray-500 dark:bg-gray-800  "
           />
           <button>
             <IoMdSearch className="text-white border border-black  w-9 h-[2.3rem] bg-slate-600 group-hover:text-red-900 absolute top-[2.4rem]" />
           </button>
         </div>
-        <div data-aos="zoom-in" className="flex justify-center">
-          <ul className="sm:flex hidden items-center gap-1 mt-4">
+        <div data-aos="zoom-in" className="flex xl:justify-center">
+          <ul className="md:hidden lg:hidden xl:flex items-center mt-4">
             {Menu.map((data) => (
               <li key={data.id}>
                 <a
@@ -93,7 +93,7 @@ function Footer() {
             ))}
           </ul>
         </div>
-        <footer className=" text-white p-4 text-center">
+        <footer className=" text-white p-4 text-center border border-slate-700 mt-2">
           <p>&copy; 2023 Your Company. All rights reserved.</p>
         </footer>
       </div>
