@@ -1,30 +1,55 @@
-import React from 'react'
-import Navbar from './component/navbar/Navbar'
-// import Upper from './component/up/Upper'
-import Hero from './component/navbar/Hero/Hero'
-import Product from './component/navbar/product/Product'
-import Banner from './component/banner/Banner'
-import Platform from './component/platform/Platform'
-import Learn from './component/platform/Learn'
-import Art from './component/platform/Art'
-import Footer from './component/footer/Footer'
-
+import React, { useState } from "react";
+import Navbar from "./component/Navbar";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Footer from "./component/Footer";
+import Cart from "./component/Cart";
+import Learn from "./component/Learn";
+import { data } from "jquery";
 
 const App = () => {
-  return (
-    
-    <div className=' bg-gray-900 overflow-x-hidden'>
-      <Navbar/>
-      {/* <Upper/> */}
-      <Hero/>
-     <Product/>
-      <Banner/>
-      <Platform/>
-      <Learn/>
-      <Art/>
-      <Footer/>
-    </div>
-  )
-}
+  const [show, setShow] = useState(true);
+  const [cart, setCart] = useState([]);
 
-export default App
+  const handleClick = (item) => {
+    let isPresent = false;
+    cart.forEach((product) => {
+      if (item.id === product.id) isPresent = true;
+    });
+    if (isPresent) {
+    return;
+  }
+    setCart([...cart, item]);
+  };
+
+  const handleChange = (item, d) => {
+    let ind = -1;
+    cart.forEach((data, index) => {
+      if (data.id === item.id) ind = index;
+    });
+
+    const tempArr = cart;
+    tempArr[ind].amount  += d;
+    if (tempArr[ind].amount === 0) tempArr[ind].amount = 1;
+    setCart([...tempArr]);
+  };
+
+  return (
+    <div className=" bg-gray-900 overflow-x-hidden App">
+      <React.Fragment>
+        <Navbar size={cart.length} setShow={setShow} />
+        {show ? (
+          <Learn handleClick={handleClick} />
+        ) : (
+          <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
+        )}
+      </React.Fragment>
+      <Routes>
+        <Route path="/Home" element={<Home />} />
+      </Routes>
+      <Footer />
+    </div>
+  );
+};
+
+export default App;
