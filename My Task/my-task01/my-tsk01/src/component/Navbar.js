@@ -8,7 +8,7 @@ const Navbar = ({ size, setShow }) => {
     <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
       <div className=" bg-slate-400 py-2">
         <div className="container flex justify-between items-center">
-          <Link to="/Home">
+          <Link to="/">
             <div
               onClick={() => setShow(true)}
               className=" w-10 text-black font-extrabold"
@@ -46,13 +46,13 @@ const Navbar = ({ size, setShow }) => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/paintings">Paintings</Link>
+            <Link  to="/paintings">Paintings</Link>
           </li>
           <li>
-            <Link to="/courses">Courses</Link>
+            <Link to="/">Courses</Link>
           </li>
           <li>
-            <Link to="/handcraft">HandCraft</Link>
+            <Link to="/">HandCraft</Link>
           </li>
           <li>
             <Link to="/plant">Plant</Link>
