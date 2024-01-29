@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 
-const Cart = ({ cart, setCart, handleChange, size }) => {
+const Cart = ({ cart, setCart, handleChange, size,  }) => {
   const [price, setPrice] = useState(0);
 
   const handlePrice = () => {

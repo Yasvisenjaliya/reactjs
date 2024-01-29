@@ -49,7 +49,7 @@ const Learn = ({ item, handleClick }) => {
             <h1 className=" pl-8 pb-5 text-teal-600 font-bold">{item.Price}</h1>
 
             <button
-              onClick={() => handleClick(item)}
+             onClick={()=>handleClick(item)}
               className=" ml-[6rem] mb-8 border p-2 hover:text-red-700"
             >
               Add to Cart
