@@ -1,6 +1,6 @@
 export const Paint = [
   {
-    id: 1,
+    id: 4,
     img: "./assets/p1.webp",
     description: "THE HANDMADE FLAIR Off White Mountains In The Clouds Printed Framed Canvas Wall ...",
     Price: 2760,
@@ -8,7 +8,7 @@ export const Paint = [
     title: "Free Delivery",
   },
   {
-    id: 2,
+    id: 5,
     img: "./assets/p2.webp",
     description: "Perpetual Paintings for Wall Decoration - Set of 5,3d Scenery Wall Painting for ...",
     Price: 379,
@@ -16,7 +16,7 @@ export const Paint = [
     title: "Free Delivery",
   },
   {
-    id: 3,
+    id: 6,
     img: "./assets/p3.webp",
     description: "The Art House Multicoloured Abstract Painting Wall Art (Onesize) by Myntra",
     Price: 1749,
@@ -24,7 +24,7 @@ export const Paint = [
     title: "Free Delivery",
   },
   {
-    id: 4,
+    id: 7,
     img: "./assets/p4.webp",
     description: "Mad Masters Lovely Couple Landscape Oil Painting 1 Piece Wooden Framed Painting ...",
     Price: 399,
@@ -32,7 +32,7 @@ export const Paint = [
     title: "Free Delivery",
   },
   {
-    id: 5,
+    id: 8,
     img: "./assets/p5.webp",
     description: "Beautiful Canvas Painting with Frame for Wall Decoration A Boat Back Side View ...",
     Price: 2489,
@@ -40,7 +40,7 @@ export const Paint = [
     title: "Free Delivery",
   },
   {
-    id: 6,
+    id: 9,
     img: "./assets/p6.webp",
     description: "Canvas Paintings Jai Sri Ram Painting Jai Shree ram ayodhya ram mandir",
     Price: 3800,
