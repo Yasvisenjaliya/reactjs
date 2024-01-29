@@ -7,7 +7,8 @@ import Cart from "./pages/Cart";
 import Learn from "./pages/Learn";
 
 import CheackOut from "./component/CheackOut";
-import Paintings from "./component/Paintings";
+import Paintings from "./pages/Paintings";
+import HandCraft from "./pages/HandCraft";
 
 const App = () => {
   const [show, setShow] = useState(true);
@@ -40,22 +41,18 @@ const App = () => {
     <>
       <div className=" bg-gray-900 overflow-x-hidden App">
         <Navbar size={cart.length} setCart={setCart} setShow={setShow} />
-        <React.Fragment>
-          {show ? (
-            <Learn handleClick={handleClick} />
-          ) : (
+
+        {/* <Learn handleClick={handleClick} />
+         
             <Cart
               cart={cart}
               setCart={setCart}
               handleChange={handleChange}
               size={cart.length}
-            />
-          )}
-        </React.Fragment>
+            /> */}
         <Routes>
-          {/* {show ? (
           <Route path="/learn" element={<Learn handleClick={handleClick} />} />
-        ) : (
+
           <Route
             path="/Cart"
             element={
@@ -67,17 +64,13 @@ const App = () => {
               />
             }
           />
-        )} */}
+          <Route path="/" element={<Home handleClick={handleClick} />} />
           <Route path="/CheackOut" element={<CheackOut />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/paintings" element={<Paintings handleClick={handleClick} />} />
+          <Route path="/handcraft" element={<HandCraft handleClick={handleClick}/>} />
         </Routes>
 
         <Footer />
-      </div>
-      <div>
-        <Routes>
-          <Route path="/" element={<Paintings/>}/>
-        </Routes>
       </div>
     </>
   );

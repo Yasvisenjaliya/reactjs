@@ -6,14 +6,16 @@ import Platform from "../component/Platform";
 import Art from "../component/Art";
 import Learn from "./Learn";
 
-const Home = () => {
+const Home = ({ handleClick }) => {
+
+  
   return (
     <div>
       <Hero />
       <Product />
       <Banner />
       <Platform />
-      <Learn />
+      <Learn handleClick={handleClick} />
       <Art />
     </div>
   );
