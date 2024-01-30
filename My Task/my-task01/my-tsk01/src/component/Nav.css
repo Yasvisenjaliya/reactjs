@@ -1,11 +1,15 @@
+*{
+  right: 0;
+  left: 0;
+}
+
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(6, auto);
     grid-gap: 10px;
     list-style: none;
     align-items: center;
-  }
-  
+  }  
 
   @media screen and (max-width: 850px) {
     
@@ -33,7 +37,9 @@
       z-index: -1;
     }
     
-   
+   .menu{
+    right: 0%;
+   }
     
   }
   

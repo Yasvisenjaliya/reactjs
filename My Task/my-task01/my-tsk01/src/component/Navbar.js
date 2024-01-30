@@ -97,7 +97,7 @@ const Navbar = ({ size, setShow }) => {
                   <Link to="/handcraft">HandCraft</Link>
                 </li>
                 <li>
-                  <Link to="/plant">Plant</Link>
+                  <Link to="/plants">Plants</Link>
                 </li>
                 <li>
                   <Link to="/exhibition">Exhibition</Link>
@@ -106,7 +106,7 @@ const Navbar = ({ size, setShow }) => {
             </div>
             {/* menu for small screens */}
             
-            <div onClick={toggleMenu}  className="flex sm:hidden text-2xl ml-[23rem]">
+            <div onClick={toggleMenu}  className="flex sm:hidden text-2xl ml-[15rem]">
               
               <IoMdMenu className="block h-6 menu text-slate-300 "/>
               
