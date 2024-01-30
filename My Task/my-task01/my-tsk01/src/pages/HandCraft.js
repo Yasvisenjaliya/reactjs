@@ -4,7 +4,7 @@ import { hand } from "../component/HandCraftData";
 const HandCraft = ({ handleClick }) => {
   return (
     <div className=" text-white">
-      <div className=" grid grid-cols-3 xl:gap-1 lg:gap-10 xl:ml-28 lg:ml-5 md:ml-20 max-sm:ml-5 max-sm:mr-5 md:mr-20 max-sm:mt-6 xl:mr-10 lg:mr-5  xl:mt-10 lg:mt-10 md:mt-20">
+      <div className=" xl:grid grid-cols-3 xl:gap-1 lg:gap-10 xl:ml-28 lg:ml-5 md:ml-20 max-sm:ml-5 max-sm:mr-5 md:mr-20 max-sm:mt-6 xl:mr-10 lg:mr-5  xl:mt-10 lg:mt-10 md:mt-20">
         {hand.map((item) => (
           <div
             key={item.id}
@@ -15,7 +15,7 @@ const HandCraft = ({ handleClick }) => {
             </div>
             <div>
               <h1 className="ml-8 mr-2 ">{item.description}</h1>
-              <h1 className=" pl-8 text-teal-600 font-bold">{item.Price} </h1>
+              <h1 className=" pl-8 text-teal-600 font-bold">Rs - {item.Price} </h1>
               <h1 className=" pl-8  text-slate-300">{item.title} </h1>
             </div>
             <button

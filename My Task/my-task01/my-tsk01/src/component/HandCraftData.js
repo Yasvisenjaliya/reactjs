@@ -1,6 +1,6 @@
 export const hand = [
     {
-        id: 1,
+        id: 10,
         img: "./assets/h1.webp",
         description: "Wooden Hand Painted Birds Set of 6 Woodev HandCraft...",
         Price: 315,
@@ -8,7 +8,7 @@ export const hand = [
         title: "Free Delivery",
       },
       {
-        id: 2,
+        id: 11,
         img: "./assets/h2.webp",
         description: "CRAFT & CREATION- Wood and Wrought Cast Iron Mini cycle...",
         Price: 455,
@@ -16,7 +16,7 @@ export const hand = [
         title: "Free Delivery",
       },
       {
-        id: 3,
+        id: 12,
         img: "./assets/h3.webp",
         description: "GUNENDRA Crafts Rajasthani Home Decor Handicrafts",
         Price: 931,
@@ -24,7 +24,7 @@ export const hand = [
         title: "Free Delivery",
       },
       {
-        id: 4,
+        id: 13,
         img: "./assets/h4.webp",
         description: "Rajasthan Gems Handicraft Wooden Elephant Figure Decorative Gift Item...",
         Price: 700,
@@ -32,15 +32,15 @@ export const hand = [
         title: "Free Delivery",
       },
       {
-        id: 5,
-        img: "./assets/h5.webp",
+        id: 14,
+        img: "./assets/h5.jpeg",
         description: "Handmakers-Natural Hand Made Bamboo (SARKANDA) Mudda Rajasthani Stool",
         Price: 699,
         amount: 1,
         title: "Free Delivery",
       },
       {
-        id: 6,
+        id: 15,
         img: "./assets/h6.webp",
         description: "GoBamboos Eco-Friendly Handmade Bamboo 8.12cm x 25.4cm Steel Bottle",
         Price: 500,
@@ -48,7 +48,7 @@ export const hand = [
         title: "Free Delivery",
       },
       {
-        id: 7,
+        id: 16,
         img: "./assets/h7.webp",
         description: "Handicraft Wooden Brown Handicraft And Hand-Painted Elephant Showpiece",
         Price: 3199,
@@ -56,7 +56,7 @@ export const hand = [
         title: "Free Delivery",
       },
       {
-        id: 8,
+        id: 17,
         img: "./assets/h8.webp",
         description: "Hand painted Pattachitra Teapot",
         Price: 2890,
@@ -64,7 +64,7 @@ export const hand = [
         title: "Free Delivery",
       },
       {
-        id: 9,
+        id: 18,
         img: "./assets/h9.webp",
         description: "7.9ft Life size Height Fairy Princess Style Cinderella's Fattonny Pumpkin Carriage for Halloween",
         Price: 7999,
@@ -72,7 +72,7 @@ export const hand = [
         title: "Free Delivery",
       },
       {
-        id: 10,
+        id: 19,
         img: "./assets/h10.webp",
         description: "Beautiful Crafted Reusable Hand Candle Holders Decorative Showpiece -15cm",
         Price: 1399,
@@ -80,7 +80,7 @@ export const hand = [
         title: "Free Delivery",
       },
       {
-        id: 11,
+        id: 20,
         img: "./assets/h11.webp",
         description: "Handicraft Solid Wood Home Temple...",
         Price: 1263,
@@ -88,7 +88,7 @@ export const hand = [
         title: "Free Delivery",
       },
       {
-        id: 12,
+        id: 21,
         img: "./assets/h12.webp",
         description: "Hand Carved Kedarnath 3D Wooden Temple",
         Price: 549,
