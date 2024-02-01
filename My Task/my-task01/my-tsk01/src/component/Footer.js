@@ -76,7 +76,7 @@ function Footer() {
             className="xl:w-[50rem] mt-10 sm:w-[50rem] md:w-[30rem] max-sm:w-[20rem] border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary dark:border-gray-500 dark:bg-gray-800  "
           />
           <button>
-            <IoMdSearch className="text-white border border-black  w-9 h-[2.3rem] bg-slate-600 group-hover:text-red-900 absolute top-[2.4rem]" />
+            <IoMdSearch className="text-white border border-black  w-9 h-[2.3rem] bg-slate-600 group-hover:text-red-900 absolute top-[2.4rem] ml-[53%]" />
           </button>
         </div>
         <div data-aos="zoom-in" className="flex xl:justify-center">

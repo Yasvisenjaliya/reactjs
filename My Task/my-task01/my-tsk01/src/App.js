@@ -5,12 +5,13 @@ import Home from "./pages/Home";
 import Footer from "./component/Footer";
 import Cart from "./pages/Cart";
 import Learn from "./pages/Learn";
-
 import CheackOut from "./component/CheackOut";
 import Paintings from "./pages/Paintings";
 import HandCraft from "./pages/HandCraft";
 import Plants from "./pages/Plants";
 import Books from "./pages/Books";
+import Exhibition from "./pages/Exhibition";
+import SignUp from "./component/SignUp";
 
 const App = () => {
   const [show, setShow] = useState(true);
@@ -66,11 +67,13 @@ const App = () => {
               />
             }
           />
+          <Route path="/SignUp" element={<SignUp />}/>
           <Route path="/" element={<Home handleClick={handleClick} />} />
           <Route path="/paintings" element={<Paintings handleClick={handleClick} />} />
           <Route path="/books" element={<Books handleClick={handleClick}/>} />
           <Route path="/handcraft" element={<HandCraft handleClick={handleClick}/>} />
           <Route path="/plants" element={<Plants handleClick={handleClick}/>} />
+          <Route path="/exhibition" element={<Exhibition handleClick={handleClick}/>} />
           <Route path="/CheackOut" element={<CheackOut />} />
         </Routes>
 

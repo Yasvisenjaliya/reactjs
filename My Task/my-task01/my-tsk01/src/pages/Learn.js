@@ -1,35 +1,8 @@
 import React from "react";
+import { List } from "../component/Data";
 
 const Learn = ({ item, handleClick }) => {
-  const List = [
-    {
-      id: 1,
-      title: "EXHIBITION | MAP BENGALURU",
-      img: "./assets/15.jpg",
-      description: "VISIBLE/INVISIBLE:Representation of...",
-      Date: "Feb 18,2023 - Dec 1,2025",
-      Price: 8999,
-      amount: 1
-    },
-    {
-      id: 2,
-      title: "EXHIBITION | MAP BENGALURU",
-      img: "./assets/16.jpg",
-      description: "Book of Gold: The Kanchana Chitra...",
-      Date: "Sep 16,2023 - Mar 8,2025",
-      Price: 7999,
-      amount: 1
-    },
-    {
-      id: 3,
-      title: "EXHIBITION | MAP BENGALURU",
-      img: "./assets/17.jpg",
-      description: "What The Camera Didn't see",
-      Date: "Dec 1,2023 - Mar 24,2025",
-      Price: 9999,
-      amount: 1
-    },
-  ];
+ 
 
   return (
     <div className=" text-white">
