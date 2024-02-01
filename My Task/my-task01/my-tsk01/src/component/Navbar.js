@@ -35,7 +35,7 @@ const Navbar = ({ size, setShow }) => {
                   placeholder="search"
                   className="w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-full border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary dark:border-gray-500 dark:bg-gray-800  "
                 />
-                <IoMdSearch className="text-gray-500 group-hover:text-red-300 absolute top-1/2 -translate-y-1/2 right-3" />
+                <IoMdSearch className="text-gray-500 group-hover:text-red-300 absolute top-1/2 -translate-y-1/2 ml-40" />
               </div>
               <Link to="/cart">
                 <div
@@ -45,6 +45,10 @@ const Navbar = ({ size, setShow }) => {
                   <FaShoppingCart />
                   <span>{size}</span>
                 </div>
+              </Link>
+
+              <Link to="/SignUp">
+                <div className=" border-b border-black hover:text-red-200">Sign Up</div>
               </Link>
             </div>
           </div>
@@ -105,20 +109,20 @@ const Navbar = ({ size, setShow }) => {
               </ul>
             </div>
             {/* menu for small screens */}
-            
-            <div onClick={toggleMenu}  className="flex sm:hidden text-2xl ml-[15rem]">
-              
-              <IoMdMenu className="block h-6 menu text-slate-300 "/>
-              
+
+            <div
+              onClick={toggleMenu}
+              className="flex sm:hidden text-2xl ml-[15rem]"
+            >
+              <IoMdMenu className="block h-6 menu text-slate-300 " />
             </div>
-            
           </div>
         </div>
         {/* Responsive dropdown menu */}
         {isMenuOpen && (
           <div className="sm:hidden max-sm:w-40 ">
             <ul
-              className={ 
+              className={
                 isMenuOpen
                   ? "nav-menu active"
                   : "nav-menu pt-2 pb-3 space-y-1 font-semibold"
