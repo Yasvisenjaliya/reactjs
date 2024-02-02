@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { IoMdMenu, IoMdSearch } from "react-icons/io";
 import { FaShoppingCart } from "react-icons/fa";
@@ -37,19 +38,35 @@ const Navbar = ({ size, setShow }) => {
                 />
                 <IoMdSearch className="text-gray-500 group-hover:text-red-300 absolute top-1/2 -translate-y-1/2 ml-40" />
               </div>
+              <div className="flex">
+
+             
+              <Link to="/SignUp">
+                <div className=" border-b border-black hover:text-red-200">Sign Up</div>
+              </Link>
+
+              <Link to="/SignIn">
+                <div className=" border-b ml-7 border-black hover:text-red-200">Sign In</div>
+              </Link>
+              
+
+              <div>
               <Link to="/cart">
                 <div
                   onClick={() => setShow(false)}
                   className=" xl:ml-10 flex lg:mr-5 text-2xl"
                 >
                   <FaShoppingCart />
-                  <span>{size}</span>
+                  <span className=" text-sm">{size}</span>
                 </div>
+                
+                
+                 
               </Link>
+              </div>
+              </div>
 
-              <Link to="/SignUp">
-                <div className=" border-b border-black hover:text-red-200">Sign Up</div>
-              </Link>
+             
             </div>
           </div>
         </div>
