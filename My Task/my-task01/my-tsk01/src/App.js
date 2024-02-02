@@ -43,7 +43,7 @@ const App = () => {
 
   return (
     <>
-      <div className=" bg-gray-900 overflow-x-hidden App">
+      <div className=" bg-gray-900 overflow-hidden overscroll-none App">
         <Navbar size={cart.length} setCart={setCart} setShow={setShow} />
 
         {/* <Learn handleClick={handleClick} />
