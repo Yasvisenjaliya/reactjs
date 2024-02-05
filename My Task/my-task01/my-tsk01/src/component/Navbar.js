@@ -109,19 +109,10 @@ const Navbar = ({ size, setShow }) => {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/paintings">Paintings</Link>
-                </li>
-                <li>
-                  <Link to="/books">Books</Link>
-                </li>
-                <li>
-                  <Link to="/handcraft">HandCraft</Link>
-                </li>
-                <li>
-                  <Link to="/plants">Plants</Link>
-                </li>
-                <li>
                   <Link to="/exhibition">Exhibition</Link>
+                </li>
+                <li>
+                  <Link to="/products">Products</Link>
                 </li>
               </ul>
             </div>
