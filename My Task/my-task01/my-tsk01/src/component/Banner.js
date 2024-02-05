@@ -7,12 +7,11 @@ const Banner = () => {
       <div className=" xl:ml-96 sm:ml-44 md:ml-32 flex md:mr-10 xl:mr-56 lg:gap-12 xl:gap-44 ">
         <div>
           <h1 className=" mt-20 xl:text-4xl lg:text-4xl md:text-2xl sm:text-3xl max-sm:text-2xl max-sm:text-center font-bold c-2">
-            No-code Website Design
+            Make Your Home Beautiful
           </h1>
           <p className=" xl:text-2xl sm:text-xl max-sm:m-6 md:mt-4 xl:mt-9 lg:mt-9 c-3">
-            Choose a template and use the drag-and-drop site builder to add
-            media and content to your pre-styled store. Create beautiful,
-            modern-looking stores with parallax images and videos.
+            Choose a products and add to cart. Make a  beautiful,
+            modern-looking Home with Art gallery plants and Paintings.
           </p>
         </div>
         <div>

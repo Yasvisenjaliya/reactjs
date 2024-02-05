@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Data } from "../component/Data";
+import { Link } from "react-router-dom";
 
 const Products = ({ handleClick }) => {
   const [data, setData] = useState(Data);
@@ -13,7 +14,7 @@ const Products = ({ handleClick }) => {
 
   return (
     <>
-      <div className="text-white mt-4">
+      <div className="text-white mt-40">
        <div className=" flex justify-center xl:gap-32 lg:gap-12 md:gap-8 sm:gap-10 max-sm:gap-2 ">
        <div onClick={() => setData(Data)}>
           <div className="bg-slate-700 xl:w-20 lg:w-16 md:w-14 sm:w-10 max-sm:w-6 max-sm:h-7 rounded-full xl:h-14 h-10 ">
@@ -63,6 +64,7 @@ const Products = ({ handleClick }) => {
             >
               Add to Cart
             </button>
+           
           </div>
         ))}
       </div>

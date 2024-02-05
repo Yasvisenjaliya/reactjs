@@ -3,7 +3,7 @@ import { List } from "../component/Data";
 
 const Exhibition = ({ handleClick }) => {
   return (
-    <div className=" text-white">
+    <div className=" text-white mt-40">
     <div className=" mt-20 pl-20">
       <h1 className=" text-4xl">Learn about Art History</h1>
     </div>

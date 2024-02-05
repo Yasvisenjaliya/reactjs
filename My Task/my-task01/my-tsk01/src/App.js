@@ -10,6 +10,7 @@ import Exhibition from "./pages/Exhibition";
 import SignUp from "./component/SignUp";
 import SignIn from "./component/SignIn";
 import Products from "./pages/Products";
+import Contact from "./pages/Contact";
 
 const App = () => {
   const [show, setShow] = useState(true);
@@ -70,6 +71,7 @@ const App = () => {
           <Route path="/" element={<Home handleClick={handleClick} />} />
           <Route path="/exhibition" element={<Exhibition handleClick={handleClick}/>} />
           <Route path="/products" element={<Products handleClick={handleClick}/>} />
+          <Route path="/contact" element={<Contact/>} />
           <Route path="/CheackOut" element={<CheackOut />} />
         </Routes>
 
