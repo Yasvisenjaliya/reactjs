@@ -24,7 +24,7 @@ const Cart = ({ cart, setCart, handleChange, size,  }) => {
 
   return (
     <article>
-      <div className=" text-white ml-[15rem] mr-[15rem] bg-slate-800 mt-4">
+      <div className=" text-white ml-[15rem] mr-[15rem] bg-slate-800 mt-40">
         <div>
           <div className=" bg-slate-700 h-[60px] text-white flex justify-between rounded-[4px]">
             <h1 className="font-bold lg:text-xl my-3 mx-2 md:text-2xl text-[15px]">
