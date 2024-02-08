@@ -30,8 +30,8 @@ const CategoryManager = () => {
   };
 
   return (
-    <div className="mt-6 ml-10">
-      <div className='flex gap-[65%] bg-slate-200 p-3 h-16 '>
+    <div className="mt-6 ml-10 max-sm:ml-2 max-sm:mr-2 mr-10">
+      <div className='flex flex-col md:flex-row max-sm:grid  justify-between items-center gap-4 p-3 md:h-16'>
         <h1 className="text-3xl font-bold">Category Manager</h1>
         <button className='flex w-40 border border-slate-800 justify-center mt-2 p-2 ' onClick={() => setIsAddingCategory(true)}><BsPlusLg />ADD Categories</button>
       </div>
