@@ -79,7 +79,7 @@ const CategoryManager = () => {
 
   return (
     <div className="mt-6 ml-10 max-sm:ml-2 max-sm:mr-2 mr-10">
-      <div className='flex flex-col md:flex-row max-sm:grid  justify-between items-center gap-4 p-3 md:h-16'>
+      <div className='flex flex-col md:flex-row max-sm:grid  justify-between items-center md:h-16'>
         <h1 className="text-3xl font-bold">Category Manager</h1>
         <Button startIcon={<Add />} variant='outlined' onClick={handleAddCategoryButtonClick}>Add Category</Button>
       </div>
@@ -108,7 +108,7 @@ const CategoryManager = () => {
           </DialogContent>
           <DialogActions>
             <Button onClick={handleCloseDialog}>Cancel</Button>
-            <Button onClick={handleAddCategory}>Save</Button>
+            <Button onClick={handleAddCategory}>Save</Button> {/* Add handleAddCategory to onClick */}
           </DialogActions>
         </Dialog>
       )}
