@@ -29,12 +29,12 @@ const CategoryList = ({ categories, onEditCategory, onDeleteCategory }) => {
   return (
     <>
       <div className="flex flex-col md:flex-row md:justify-between  max-sm:mt-2 bg-white rounded">
-        <div className="max-sm:grid flex xl:gap-[35%] lg:gap-[48%] md:gap-[10%] max-sm:gap-3 w-full items-center  mt-4 md:mt-0">
+        <div className="max-sm:grid flex xl:gap-[35%] lg:gap-[48%] md:gap-[20%] max-sm:gap-3 w-full items-center  mt-4 md:mt-0">
           <div>
             <Box sx={{
               bgcolor: "white",
               borderRadius: 2,
-              display: "xl:flex lg:flex",
+              display: "flex",
             }}>
               <div className="xl:flex lg:flex md:flex gap-5">
                 <FilterAltOutlinedIcon sx={{ my: 2, mx: 1 }} />
