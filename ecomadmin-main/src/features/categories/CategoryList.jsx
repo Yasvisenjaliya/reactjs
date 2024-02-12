@@ -1,33 +1,42 @@
-import React, { useState, useEffect } from "react";
+// CategoryList.js
+import React, { useState } from "react";
 import TextField from '@mui/material/TextField';
 import Switch from '@mui/material/Switch';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import FilterAltOutlinedIcon from '@mui/icons-material/FilterAltOutlined';
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
 import { Delete, Edit } from "@mui/icons-material";
 
 const CategoryList = ({ categories, onEditCategory, onDeleteCategory }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [indexedCategories, setIndexedCategories] = useState([]);
-
-  useEffect(() => {
-    // Auto index categories when categories change
-    const indexed = categories.map((category, index) => ({ ...category, index: index + 1 }));
-    setIndexedCategories(indexed);
-  }, [categories]); // Include categories in the dependency array
+  const [deleteConfirmationOpen, setDeleteConfirmationOpen] = useState(false);
+  const [categoryToDelete, setCategoryToDelete] = useState(null);
 
   const handleSearchChange = (value) => {
     setSearchQuery(value);
   };
 
-  const filteredCategories = indexedCategories.filter(category => {
-    // Check if category.name exists before calling toLowerCase()
-    return category.name && category.name.toLowerCase().includes(searchQuery.toLowerCase());
-  });
+  const handleDeleteButtonClick = (category) => {
+    setCategoryToDelete(category);
+    setDeleteConfirmationOpen(true);
+  };
+
+  const handleConfirmDelete = () => {
+    onDeleteCategory(categoryToDelete);
+    setCategoryToDelete(null);
+    setDeleteConfirmationOpen(false);
+  };
+
+  const handleCancelDelete = () => {
+    setCategoryToDelete(null);
+    setDeleteConfirmationOpen(false);
+  };
 
   return (
     <>
+      {/* Search bar */}
       <div className="flex flex-col md:flex-row md:justify-between  max-sm:mt-2 bg-white rounded">
         <div className="max-sm:grid flex xl:gap-[35%] lg:gap-[48%] md:gap-[20%] max-sm:gap-3 w-full items-center  mt-4 md:mt-0">
           <div>
@@ -41,12 +50,14 @@ const CategoryList = ({ categories, onEditCategory, onDeleteCategory }) => {
                 <TextField label="Search" onChange={(e) => handleSearchChange(e.target.value)} value={searchQuery} className="w-60" />
                 <Switch className="mt-2 ml-5" />
               </div>
-              <h1 className="my-auto w-60">Active Coupon</h1>
+              <h1 className="my-auto w-60">Active Category</h1>
             </Box>
           </div>
-          <div className="mt-4 md:mt-0">Total Categories: {filteredCategories.length}</div>
+          <div className="mt-4 md:mt-0">Total Categories: {indexedCategories.length}</div>
         </div>
       </div>
+      
+      {/* Category table */}
       <div className="mt-4">
         <TableContainer component={Paper}>
           <Table>
@@ -58,20 +69,18 @@ const CategoryList = ({ categories, onEditCategory, onDeleteCategory }) => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {filteredCategories.map((category, index) => (
+              {categories.map((category, index) => (
                 <TableRow key={index} className="bg-white text-center">
-                  <TableCell className="">{category.index}</TableCell>
+                  <TableCell className="">{index + 1}</TableCell>
                   <TableCell className="">{category.name}</TableCell>
                   <TableCell className="">
-                    <Button  onClick={() => onEditCategory(category)}>
-                      <Edit className=" text-center text-slate-950"/>
+                    <Button onClick={() => onEditCategory(category)}>
+                      <Edit className="text-center text-gray-500"/>
                     </Button>
-                    <Button className=" " onClick={() => onDeleteCategory(category)}>
-                      <Delete className=" text-center text-slate-950"/>
-                      
+                    <Button onClick={() => handleDeleteButtonClick(category)}>
+                      <Delete className="text-center text-gray-500"/>
                     </Button>
                     <Switch/>
-                    
                   </TableCell>
                 </TableRow>
               ))}
@@ -79,6 +88,18 @@ const CategoryList = ({ categories, onEditCategory, onDeleteCategory }) => {
           </Table>
         </TableContainer>
       </div>
+
+      {/* Delete confirmation dialog */}
+      <Dialog open={deleteConfirmationOpen} onClose={handleCancelDelete}>
+        <DialogTitle>Confirm Delete</DialogTitle>
+        <DialogContent>
+          Are you sure you want to delete this category?
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleCancelDelete}>Cancel</Button>
+          <Button onClick={handleConfirmDelete} color="error">Delete</Button>
+        </DialogActions>
+      </Dialog>
     </>
   );
 };
